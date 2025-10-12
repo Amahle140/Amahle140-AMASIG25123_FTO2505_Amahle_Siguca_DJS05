@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { formatDate } from "../utils/formatDate";
 import styles from "./PodcastCard.module.css";
 
@@ -27,7 +28,11 @@ export default function PodcastCard({ podcast, genres }) {
   });
 
   return (
-    <div className={styles.card}>
+    <Link
+      to={`/show/${podcast.id}`}
+      state={{ fromSearch: window.location.search }}
+      className={styles.card}
+    >
       <img src={podcast.image} alt={podcast.title} />
 
       <h3>{podcast.title}</h3>
@@ -36,6 +41,6 @@ export default function PodcastCard({ podcast, genres }) {
       <p className={styles.updatedText}>
         Updated {formatDate(podcast.updated)}
       </p>
-    </div>
+    </Link>
   );
 }
