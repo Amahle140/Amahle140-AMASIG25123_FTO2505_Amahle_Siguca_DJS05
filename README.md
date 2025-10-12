@@ -54,7 +54,7 @@ Copy code
 npm install
  Run the app
 bash
-Copy code
+
 npm run dev
 Then open the link shown in your terminal ( http://localhost:5173).
 
