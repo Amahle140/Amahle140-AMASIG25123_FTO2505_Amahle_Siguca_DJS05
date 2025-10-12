@@ -45,7 +45,7 @@ The project also supports:
 
 ###  Clone the repository
 ```bash
-git clone https://github.com/your-username/podcast-app.git
+git clone https://github.com/Amahle140/Amahle140-AMASIG25123_FTO2505_Amahle_Siguca_DJS05
 
 cd podcast-app
  Install dependencies
